@@ -12,7 +12,18 @@ var nombres=[];
 
 var NUMERO_NOMBRES=10;
 
+for (var i = 1; i <= NUMERO_NOMBRES; i++) {
+    var nombre = prompt("Introduce un nombre :"); 
+    nombres.push(nombre); 
+}
 
+var mensaje = "Has ingresado los nombres : \n\n"; 
+
+for (var i = 0; i < nombres.length; i++) {
+    mensaje += nombres[i] + "\n";
+}
+
+alert(mensaje);
 
 
 /* AVISOS (WARNING) */
